@@ -8,10 +8,12 @@ function outerFunction(inputNumber) {
         console.log(count+num)
     }
 
-    return innerFunction(inputNumber);
+    return innerFunction;
 
 }
 
 
-outerFunction(10);
+const count = outerFunction(10);
+
+count(3);
 
