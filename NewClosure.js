@@ -1,11 +1,11 @@
 //clousre example
 
 
-function outerFunction(inputNumber) {
+function outerFunction() {
     let count = 2;
 
-    function innerFunction(num) {
-        console.log(count+num)
+    function innerFunction() {
+        console.log(count++)
     }
 
     return innerFunction;
@@ -13,7 +13,9 @@ function outerFunction(inputNumber) {
 }
 
 
-const count = outerFunction(10);
+const count = outerFunction();
 
-count(3);
+count();
+
+count();
 
